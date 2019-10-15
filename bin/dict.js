@@ -1,20 +1,15 @@
 #!/usr/bin/env node
 const program = require('commander')
 const pkg = require('../package.json')
-const word = require('../lib/word.js')
+const queryWord = require('../lib/queryWord.js')
 
 program.version(pkg.version)
 
-program.on('--help', function() {
-  const log = console.log
-  log('Usage: t [word]')
-  log()
-  log('Options:')
-  log('   --help        Get help')
-  log()
-  log()
-})
-
+const params = Array.prototype.slice.call(process.argv, 2)
 program.parse(process.argv)
 
-word(Array.prototype.slice.call(process.argv, 2).join(' '))
+if (params.length === 0) {
+  program.help()
+} else {
+  queryWord(params.join(' '))
+}

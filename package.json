@@ -1,11 +1,16 @@
 {
   "name": "tranguage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "description": "Tranguage A terminal dictionary tool build with node",
+  "description": "Tranguage: A terminal dictionary tool build with node",
   "bin": {
     "t": "./bin/dict.js"
   },
+  "keywords": [
+    "dictionary",
+    "tranguage",
+    "terminal"
+  ],
   "author": "arronKler <panzer9@126.com>",
   "license": "MIT",
   "dependencies": {
