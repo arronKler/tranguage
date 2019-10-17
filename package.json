@@ -1,6 +1,6 @@
 {
   "name": "tranguage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "description": "Tranguage: A terminal dictionary tool build with node",
   "bin": {
@@ -12,11 +12,19 @@
     "terminal"
   ],
   "author": "arronKler <panzer9@126.com>",
+  "homepage": "https://github.com/arronkler/tranguage",
+  "bugs": {
+    "url": "https://github.com/arronkler/tranguage/issues",
+    "email": "panzer9@126.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arronKler/tranguage.git"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
-    "request": "^2.88.0",
-    "xml2js": "^0.4.22"
+    "request": "^2.88.0"
   }
 }
